@@ -1,0 +1,44 @@
+    <main>
+      <section class="welcome"></section>
+      <h2>The Odin Project Restaurant</h2>
+      <h1>Best restaurant of the Galaxy!</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel earum doloremque officia adipisci architecto omnis. Culpa repudiandae quas ipsum cumque. Dolor corrupti modi facilis similique architecto harum. Voluptate, totam corrupti.
+      </p>
+      <img class='welcome-food-img' src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Food Image">
+    </main>
+
+
+    const contentEl = document.querySelector('.content');
+
+const mainEl = document.createElement('main');
+contentEl.appendChild(mainEl);
+
+const sectionEl = document.createElement('section');
+mainEl.appendChild(sectionEl);
+sectionEl.classList.add('welcome');
+
+const h2El = document.createElement('h2');
+h2El.innerText = "The Odin Project Restaurant";
+sectionEl.appendChild(h2El);
+
+const h1El = document.createElement('h1');
+h1El.innerText = 'Best restaurant of the Galaxy!';
+sectionEl.appendChild(h1El);
+
+const pOne = document.createElement('p');
+pOne.innerText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel earum doloremque officia adipisci architecto omnis. Culpa repudiandae quas ipsum cumque. Dolor corrupti modi facilis similique architecto harum. Voluptate, totam corrupti.'
+sectionEl.appendChild(pOne);
+
+// const imgWelcome = document.createElement('img');
+// imgWelcome.classList.add('welcome-food-img');
+// imgWelcome.src = "https://images.unsplash.com/photo-1490818387583-1baba5e638af?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+
+// sectionEl.appendChild(imgWelcome)
+
+
+
+{/* <main>
+
+<img class='welcome-food-img' src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Food Image">
+</main> */}
